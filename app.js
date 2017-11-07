@@ -8,7 +8,7 @@ var bot = linebot({
   channelAccessToken: 'EFibAncx5/27LpVFzz3/k/n1sEsoaQeVjqV2f8DDyLOydC3E0YpuPBcZFn5962mJT3pYe7dz4Tww5ouFBFA5Uia1inEXm5U0bfIJ+APu1ZiSWSNg5+ND5R68B/dnextLgSW9rkSHo916ADbuCOYqWAdB04t89/1O/w1cDnyilFU='
 });
 
-var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '無聊', '色情'];
+var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '無聊', '色情', '神奇', '87', '6', '好笑', '邊緣', '滷味最重', '神'];
 var num = adj.length - 1;
 console.log(num);
 
@@ -23,6 +23,34 @@ bot.on('message', function(event) {
 	console.log(inAdj);
   	switch (text) {
   		case '品翰':
+  			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
+			    console.log(data);
+			}).catch(function (error) {
+	   		 	console.log(error);
+			});
+		break;
+		case '子機':
+  			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
+			    console.log(data);
+			}).catch(function (error) {
+	   		 	console.log(error);
+			});
+		break;
+		case '慶生':
+  			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
+			    console.log(data);
+			}).catch(function (error) {
+	   		 	console.log(error);
+			});
+		break;
+		case '暉暉':
+  			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
+			    console.log(data);
+			}).catch(function (error) {
+	   		 	console.log(error);
+			});
+		break;
+		case '大嫂':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
