@@ -9,7 +9,7 @@ var bot = linebot({
 });
 
 var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '無聊', '色情'];
-var num = adj.length;
+var num = adj.length - 1;
 console.log(num);
 
 
