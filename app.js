@@ -29,7 +29,7 @@ bot.on('message', function(event) {
 	   		 	console.log(error);
 			});
 			break;
-		case '子機':
+		case '子雞':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
