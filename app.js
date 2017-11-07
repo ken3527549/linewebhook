@@ -2,9 +2,9 @@ var linebot = require('linebot');
 var express = require('express');
 
 var bot = linebot({
-  channelId: channel Id,
-  channelSecret: channel Secret,
-  channelAccessToken: channel Access Token
+  channelId: 1545062917,
+  channelSecret: 83088b5bcadb9ee57cf6c334bc380e89,
+  channelAccessToken: EFibAncx5/27LpVFzz3/k/n1sEsoaQeVjqV2f8DDyLOydC3E0YpuPBcZFn5962mJT3pYe7dz4Tww5ouFBFA5Uia1inEXm5U0bfIJ+APu1ZiSWSNg5+ND5R68B/dnextLgSW9rkSHo916ADbuCOYqWAdB04t89/1O/w1cDnyilFU=
 });
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
