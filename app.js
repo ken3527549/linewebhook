@@ -1,5 +1,6 @@
 var linebot = require('linebot');
 var express = require('express');
+var excuse = require('huh');
 
 var bot = linebot({
   channelId: '1545062917',
@@ -8,6 +9,19 @@ var bot = linebot({
 });
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
+  if (event.message.type === 'text') {
+  	var text = event.message.text;
+  	switch (text) {
+  		case '品翰':
+  			event.reply(`Thank you for sending ${text}. Your message is very important to us. The problem was caused by ${excuse.get()}`).then(function (data) {
+			    console.log(data);
+			}).catch(function (error) {
+	   		 	console.log(error);
+			});
+  			break;
+
+  	}
+  }
 });
 
 const app = express();
