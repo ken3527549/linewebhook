@@ -12,6 +12,7 @@ var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '�
 var num = adj.length;
 
 var inAdj = adj[Math.floor((Math.random() * num) + 1)];
+console.log(inAdj);
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
   if (event.message.type === 'text') {
