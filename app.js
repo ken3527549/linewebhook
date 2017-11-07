@@ -10,13 +10,16 @@ var bot = linebot({
 
 var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '無聊', '色情'];
 var num = adj.length;
+console.log(num);
 
 
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
   if (event.message.type === 'text') {
   	var text = event.message.text;
-  	var inAdj = adj[Math.floor((Math.random() * num) + 1)];
+  	var rNum = Math.floor((Math.random() * num) + 1);
+  	console.log(rNum);
+  	var inAdj = adj[rNum];
 	console.log(inAdj);
   	switch (text) {
   		case '品翰':
