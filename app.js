@@ -11,12 +11,13 @@ var bot = linebot({
 var adj = ['火爆', '正', '可愛', '帥氣', '機車', '漂亮', '有趣', '無聊', '色情'];
 var num = adj.length;
 
-var inAdj = adj[Math.floor((Math.random() * num) + 1)];
-console.log(inAdj);
+
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
   if (event.message.type === 'text') {
   	var text = event.message.text;
+  	var inAdj = adj[Math.floor((Math.random() * num) + 1)];
+	console.log(inAdj);
   	switch (text) {
   		case '品翰':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
