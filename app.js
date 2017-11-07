@@ -28,35 +28,35 @@ bot.on('message', function(event) {
 			}).catch(function (error) {
 	   		 	console.log(error);
 			});
-		break;
+			break;
 		case '子機':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
 	   		 	console.log(error);
 			});
-		break;
+			break;
 		case '慶生':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
 	   		 	console.log(error);
 			});
-		break;
+			break;
 		case '暉暉':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
 	   		 	console.log(error);
 			});
-		break;
+			break;
 		case '大嫂':
   			event.reply(`${text}是群組中最${inAdj}的人`).then(function (data) {
 			    console.log(data);
 			}).catch(function (error) {
 	   		 	console.log(error);
 			});
-		break;
+			break;
 
   	}
   }
