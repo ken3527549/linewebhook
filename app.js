@@ -20,8 +20,8 @@ bot.on('message', function(event) {
   		case '正妹':
 			event.reply({
 				type: 'image',
-				originalContentUrl: 'http://img.appledaily.com.tw/images/ReNews/20170219/640_62755045a35873ee34b0b54eca3da71a.jpg',
-				previewImageUrl: 'http://img.appledaily.com.tw/images/ReNews/20170219/640_62755045a35873ee34b0b54eca3da71a.jpg'
+				originalContentUrl: 'https://i.imgur.com/uoY6QXR.jpg',
+				previewImageUrl: 'https://i.imgur.com/uoY6QXR.jpg'
 			});
 			break;
 		default:
