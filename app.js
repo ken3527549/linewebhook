@@ -24,7 +24,7 @@ bot.on('message', function(event) {
 			event.reply({
 				type: 'image',
 				originalContentUrl: ingirls,
-				previewImageUrl: ingirls
+				previewImageUrl: 'https://imgur.com/a/zvWL5'
 			}).then(function (data) {
 				console.log(data);
 			}).catch(function (error) {
