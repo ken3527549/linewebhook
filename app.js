@@ -17,11 +17,14 @@ bot.on('message', function(event) {
   if (event.message.type === 'text') {
 	var text = event.message.text;
   	switch (text) {
-  		case '正妹':
+		case '正妹':
+			var num = statements.girls.length - 1;
+			var rNum = Math.floor((Math.random() * num) + 1);
+			var ingirls = statements.girls[rNum];
 			event.reply({
 				type: 'image',
-				originalContentUrl: 'https://i.imgur.com/uoY6QXR.jpg',
-				previewImageUrl: 'https://i.imgur.com/uoY6QXR.jpg'
+				originalContentUrl: ingirls,
+				previewImageUrl: ingirls
 			}).then(function (data) {
 				console.log(data);
 			}).catch(function (error) {
