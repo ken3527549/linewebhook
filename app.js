@@ -11,8 +11,6 @@ var bot = linebot({
 });
 
 
-var num = adj.length - 1;
-console.log(num);
 
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
@@ -28,6 +26,7 @@ bot.on('message', function(event) {
 			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
+				var num = statements.adj.length - 1;
 				var rNum = Math.floor((Math.random() * num) + 1);
 				var inAdj = statements.adj[rNum];
 				event.reply(`${text}是群組中${inAdj}的人`).then(function (data) {
@@ -47,7 +46,7 @@ const linebotParser = bot.parser();
 app.post('/', linebotParser);
 
 //因為 express 預設走 port 3000，而 heroku 上預設卻不是，要透過下列程式轉換
-var server = app.listen(process.env.PORT || 3333, function() {
+var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });
