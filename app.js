@@ -22,7 +22,11 @@ bot.on('message', function(event) {
 				type: 'image',
 				originalContentUrl: 'https://i.imgur.com/uoY6QXR.jpg',
 				previewImageUrl: 'https://i.imgur.com/uoY6QXR.jpg'
-			});
+			}).then(function (data) {
+				console.log(data);
+			}).catch(function (error) {
+				console.log(error);
+			});;
 			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
