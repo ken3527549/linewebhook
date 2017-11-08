@@ -7,5 +7,6 @@ var girls = ['https://i.imgur.com/uoY6QXR.jpg',
     'https://instagram.ftpe7-2.fna.fbcdn.net/t51.2885-15/e35/21373579_519634181713920_7036219177555722240_n.jpg'];
 
 module.exports = {
-    adj
+    adj,
+    girls
 }
