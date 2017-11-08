@@ -16,8 +16,9 @@ bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
   if (event.message.type === 'text') {
 	var text = event.message.text;
+	var otherCmds = cmds.others;
   	switch (text) {
-		case '正妹':
+		case otherCmds[0]:
 			var num = statements.girls.length - 1;
 			var rNum = Math.floor((Math.random() * num) + 1);
 			var ingirls = statements.girls[rNum];
@@ -30,6 +31,20 @@ bot.on('message', function(event) {
 			}).catch(function (error) {
 				console.log(error);
 			});;
+			break;
+		case otherCmds[1]:
+			event.reply({
+				type: 'sticker',
+				packageId: '1',
+				stickerId: Math.floor((Math.random() * 21) + 1)
+			});
+			break;
+		case otherCmds[2]:
+			event.reply({
+				type: 'sticker',
+				packageId: '2',
+				stickerId: Math.floor((Math.random() * 179) + 140)
+			});
 			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
