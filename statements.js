@@ -6,9 +6,6 @@ var girls = ['https://i.imgur.com/uoY6QXR.jpg',
     'https://instagram.ftpe7-2.fna.fbcdn.net/t51.2885-15/e35/23347830_152342565510491_8727058728664170496_n.jpg',
     'https://instagram.ftpe7-2.fna.fbcdn.net/t51.2885-15/e35/21373579_519634181713920_7036219177555722240_n.jpg'];
 
-var packageId = [1, 2, 3, 4];
-var stickerId = [1,2,3,4,5,6,7,8,9,10,11,12,113,14,15,16,17,18,19,20,21];
-
 module.exports = {
     adj,
     girls
