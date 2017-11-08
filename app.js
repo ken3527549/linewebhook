@@ -46,7 +46,7 @@ bot.on('message', function(event) {
 				stickerId: Math.floor((Math.random() * 179) + 140)
 			});
 			break;
-		case otherCmds[2]:
+		case otherCmds[3]:
 			event.reply(cmds.all);
 			break;
 		default:
