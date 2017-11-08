@@ -43,7 +43,7 @@ bot.on('message', function(event) {
 			event.reply({
 				type: 'sticker',
 				packageId: '2',
-				stickerId: Math.floor((Math.random() * 179) + 140)
+				stickerId: Math.floor((Math.random() * 39) + 140)
 			});
 			break;
 		case otherCmds[3]:
