@@ -3,6 +3,8 @@ var express = require('express');
 var excuse = require('huh');
 var statements = require('./statements');
 var cmds = require('./cmds');
+var translation = require('./translation');
+
 
 var bot = linebot({
   channelId: '1545062917',
@@ -58,6 +60,14 @@ bot.on('message', function(event) {
 					console.log(data);
 				}).catch(function (error) {
 						console.log(error);
+				});
+			} else {
+				translation.getTranslation(text, 'en').then((r) => {
+					event.reply(JSON.parse(r).data.translations[0].translatedText).then(function (data) {
+						console.log(data);
+					}).catch(function (error) {
+							console.log(error);
+					});
 				});
 			}
 			break;
