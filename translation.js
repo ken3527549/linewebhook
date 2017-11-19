@@ -7,11 +7,12 @@ module.exports = {
         wrap.getTranslation = (text) => {
             var options = {
                 url:"https://translation.googleapis.com/language/translate/v2",
-                qs:{
+                form:{
                     'q':string,
                     'target':target,
                     'key':'AIzaSyAttKZkJ4o4vMMdXc4krQjOytLhQIG0Hls'
-                }
+                },
+                method:'POST'
             };
             request(options, function(error, response, body) {
                 console.log('error:', error); // Print the error if one occurred
