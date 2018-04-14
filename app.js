@@ -66,7 +66,7 @@ bot.on('message', function(event) {
 		case otherCmds[3]:
 			event.reply(cmds.all);
 			break;
-		case cmds.pix[text]:
+		case cmds.pix.text:
 			console.log(text)
 			event.reply(text);
 			break;
