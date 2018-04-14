@@ -3,7 +3,9 @@ var others = ['抽', '幹嘛', '哈哈', '指令'];
 var pix = {};
 for (let index = 1; index < 44; index++) {
     // pix.push(index.toString());
-    pix[index.toString()] = index.toString();
+    if(index !== (22 || 23 || 24 || 25 || 41)) {
+        pix[index.toString()] = index.toString();
+    }
 }
 
 var all = highschool.concat(others).join(' ');
