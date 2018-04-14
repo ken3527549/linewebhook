@@ -35,7 +35,11 @@ bot.on('message', function(event) {
 			// });;
 			var num = statements.girls.length - 1;
 			var rNum = Math.floor((Math.random() * num) + 1);
+<<<<<<< HEAD
 			var ingirls = "https://35.201.142.154/logo-design-26.jpg";
+=======
+			var ingirls = "https://35.201.142.154/linechatbot.jpg";
+>>>>>>> a8b0234016da8935313e39d7eb4d75279ea86457
 			event.reply({
 				type: 'image',
 				originalContentUrl: ingirls,
