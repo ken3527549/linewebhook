@@ -66,8 +66,13 @@ bot.on('message', function(event) {
 			event.reply(cmds.all);
 			break;
 		case cmds.pix[text]:
-			console.log(text)
-			event.reply(text);
+			console.log(text);
+			let URL = cmds.pixURL[text];
+			event.reply({
+				type: 'image',
+				originalContentUrl: URL,
+				previewImageUrl: URL
+			})
 			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
