@@ -67,7 +67,7 @@ bot.on('message', function(event) {
 			break;
 		case cmds.pix[text]:
 			console.log(text);
-			let URL = cmds.pixURL[text];
+			let URL = `https://video-dev.iiot.io/${text}.jpg`;
 			event.reply({
 				type: 'image',
 				originalContentUrl: URL,
