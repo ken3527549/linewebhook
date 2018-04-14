@@ -19,8 +19,9 @@ bot.on('message', function(event) {
   if (event.message.type === 'text') {
 	var text = event.message.text;
 	var otherCmds = cmds.others;
+	console.log(text);
 	console.log(cmds.pix);
-	console.log(cmds.pix.text);
+	console.log(cmds.pix[text]);
   	switch (text) {
 		case otherCmds[0]:
 			// var num = statements.girls.length - 1;
