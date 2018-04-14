@@ -21,9 +21,21 @@ bot.on('message', function(event) {
 	var otherCmds = cmds.others;
   	switch (text) {
 		case otherCmds[0]:
+			// var num = statements.girls.length - 1;
+			// var rNum = Math.floor((Math.random() * num) + 1);
+			// var ingirls = statements.girls[rNum];
+			// event.reply({
+			// 	type: 'image',
+			// 	originalContentUrl: ingirls,
+			// 	previewImageUrl: ingirls
+			// }).then(function (data) {
+			// 	console.log(data);
+			// }).catch(function (error) {
+			// 	console.log(error);
+			// });;
 			var num = statements.girls.length - 1;
 			var rNum = Math.floor((Math.random() * num) + 1);
-			var ingirls = statements.girls[rNum];
+			var ingirls = "https://35.201.142.154/linechatbot.jpg";
 			event.reply({
 				type: 'image',
 				originalContentUrl: ingirls,
