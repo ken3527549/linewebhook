@@ -3,7 +3,7 @@ var others = ['抽', '幹嘛', '哈哈', '指令'];
 var pix = {};
 for (let index = 1; index < 44; index++) {
     // pix.push(index.toString());
-    pix[index.toString()] = index;
+    pix[index.toString()] = index.toString();
 }
 
 var all = highschool.concat(others).join(' ');
