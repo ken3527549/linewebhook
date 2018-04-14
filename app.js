@@ -66,6 +66,10 @@ bot.on('message', function(event) {
 		case otherCmds[3]:
 			event.reply(cmds.all);
 			break;
+		case cmds.pix[text]:
+			console.log(text)
+			event.reply(text);
+			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
 				var num = statements.adj.length - 1;
