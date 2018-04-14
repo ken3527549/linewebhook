@@ -85,13 +85,13 @@ bot.on('message', function(event) {
 						console.log(error);
 				});
 			} else {
-				translation.getTranslation(text, 'en').then((r) => {
-					event.reply(JSON.parse(r).data.translations[0].translatedText).then(function (data) {
-						console.log(data);
-					}).catch(function (error) {
-							console.log(error);
-					});
-				});
+				// translation.getTranslation(text, 'en').then((r) => {
+				// 	event.reply(JSON.parse(r).data.translations[0].translatedText).then(function (data) {
+				// 		console.log(data);
+				// 	}).catch(function (error) {
+				// 			console.log(error);
+				// 	});
+				// });
 			}
 			break;
 
