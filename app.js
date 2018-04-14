@@ -36,6 +36,7 @@ bot.on('message', function(event) {
 			var num = statements.girls.length - 1;
 			var rNum = Math.floor((Math.random() * num) + 1);
 			var ingirls = statements.girls[rNum];
+			console.log('girls:', ingirls);
 
 			event.reply({
 				type: 'image',
