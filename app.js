@@ -4,6 +4,7 @@ var excuse = require('huh');
 var statements = require('./statements');
 var cmds = require('./cmds');
 var translation = require('./translation');
+var fetch = require('node-fetch');
 
 
 var bot = linebot({
@@ -73,6 +74,21 @@ bot.on('message', function(event) {
 				originalContentUrl: URL,
 				previewImageUrl: URL
 			})
+			break;
+		case '滾':
+			let roomId = event.source.roomId;
+			let endpoint = `https://api.line.me/v2/bot/room/${roomId}/leave`;
+			let headers = {
+				"Authorization": `Bearer EFibAncx5/27LpVFzz3/k/n1sEsoaQeVjqV2f8DDyLOydC3E0YpuPBcZFn5962mJT3pYe7dz4Tww5ouFBFA5Uia1inEXm5U0bfIJ+APu1ZiSWSNg5+ND5R68B/dnextLgSW9rkSHo916ADbuCOYqWAdB04t89/1O/w1cDnyilFU=`,
+				"Content-Length": 0
+			};
+			fetch(endpoint, { method: "POST", headers: headers })
+			.then(r => {
+				console.log(r);
+			})
+			.catch(e => {
+				console.log(e);
+			});
 			break;
 		default:
 			if (cmds.highschool.indexOf(text) != -1) {
